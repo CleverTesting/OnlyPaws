@@ -1,17 +1,18 @@
-"homepage": "https://CleverTesting.github.io/OnlyPaws"{
+{
   "name": "onlypaws",
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "homepage": "https://CleverTesting.github.io/OnlyPaws",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "dev:api": "PATH=$HOME/.local/bin:$PATH tsx server/src/index.ts",
     "dev:full": "concurrently \"npm run dev\" \"npm run dev:api\"",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "typecheck": "vue-tsc --noEmit"
-"predeploy": "npm run build",
-"deploy": "gh-pages -d dist"
+    "typecheck": "vue-tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
